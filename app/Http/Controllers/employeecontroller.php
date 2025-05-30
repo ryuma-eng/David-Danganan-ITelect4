@@ -59,7 +59,7 @@ class employeecontroller extends Controller
             ]);
 
               employee::findOrFail($id)->update($request->all());
-            return redirect()->back->with('status', 'Employee Updated Successfully!');
+            return redirect()->back()->with('status', 'Employee Updated Successfully!');
         }}
 
 
@@ -68,7 +68,7 @@ class employeecontroller extends Controller
 
         $employees = employee::findOrFail($id);
         $employees->delete();
-        return redirect()->back->with('status', 'Employee Deleted');
+        return redirect()->back()->with('status', 'Employee Deleted');
 
      }
             

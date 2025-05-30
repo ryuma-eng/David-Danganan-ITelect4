@@ -19,8 +19,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
+                
+                        <a></a>
                         <div class="card-header">
-                            <a class="btn btn-info">New Employee</a>
+                            <a class="btn btn-info" href="{{ route('employee.create') }}">New Employee</a>
 
                                 <div class="card-tools">
                                     <div class="input-group input-group-sm" style="width: 150px;">
@@ -34,6 +36,7 @@
                                     </div>
                                 </div>
                         </div>
+                    </form>
                         <div class="card-body table-responsive p-0">
                             <table class="table table-hover text-nowrap">
                                 <thead>
